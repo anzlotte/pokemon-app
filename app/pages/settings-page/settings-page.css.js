@@ -1,0 +1,34 @@
+import { css } from 'lit-element';
+
+export default css`
+
+:host {
+  display: block;
+  padding: 16px;
+  font-family: 'Arial', sans-serif;
+}
+
+h1 {
+  font-size: 5em; /* Tamaño grande para impacto */
+  color: #30b3f0;
+  text-shadow: 
+    3px 3px 5px rgba(0, 0, 0, 0.7), /* Sombra más pronunciada */
+    1px 1px 3px rgba(255, 255, 255, 0.2); /* Sombra clara para profundidad */
+  margin: 20px 0; /* Margen superior e inferior */
+  padding: 10px; /* Espaciado interno */
+  text-align: center; /* Centrado del texto */
+  font-family: 'Arial', sans-serif; /* Fuente para mayor legibilidad */
+  border-radius: 10px; /* Bordes redondeados */
+  display: inline-block; /* Para que el fondo se ajuste al contenido */
+  transition: transform 0.3s ease, color 0.3s ease; /* Efectos de transición más suaves */
+  background: rgba(255, 255, 255, 0.1); /* Fondo sutil para destacar */
+}
+
+h1:hover {
+  transform: scale(1.05); /* Aumento de tamaño al pasar el mouse */
+  color: #ffcc00; /* Cambio de color al pasar el mouse */
+  text-shadow: 
+    4px 4px 6px rgba(0, 0, 0, 0.8), /* Aumentar sombra oscura al pasar el mouse */
+    1px 1px 5px rgba(255, 255, 255, 0.3); /* Aumentar sombra clara */
+}
+`;
